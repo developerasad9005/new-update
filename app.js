@@ -135,6 +135,9 @@ document.getElementById('shop').addEventListener('click', function() {
    else if(shop_name === "burger"){
     document.getElementById('bg_image').src = 'image/burger.png';
    }
+   else if(shop_name === "subway"){
+    document.getElementById('bg_image').src = 'image/subway.png';
+   }
 })
 
 // document.getElementById('nameChanger').addEventListener('click', function () {
