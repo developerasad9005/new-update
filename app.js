@@ -1,23 +1,23 @@
 document.getElementById("submit").addEventListener("click", function () {
     const date = document.getElementById("date").value;
     let firstPrizecount = document.getElementById('firstPrize').value;
-    let secondPrizecount = document.getElementById('secondPrize').value;
-    let thirdPrizecount = document.getElementById('thirdPrize').value;
+    // let secondPrizecount = document.getElementById('secondPrize').value;
+    // let thirdPrizecount = document.getElementById('thirdPrize').value;
 
     
     let firstPrize = parseFloat(firstPrizecount) + 1;
 
-    let secondPrize = parseFloat(secondPrizecount) + 1;
-    let thirdPrize = parseFloat(thirdPrizecount) + 1;
+    // let secondPrize = parseFloat(secondPrizecount) + 1;
+    // let thirdPrize = parseFloat(thirdPrizecount) + 1;
   
     document.getElementById('firstPrize').value = parseFloat(firstPrize.toFixed(2));
-    document.getElementById('secondPrize').value = parseFloat(secondPrize.toFixed(2));
-    document.getElementById('thirdPrize').value = parseFloat(thirdPrize.toFixed(2));
+    // document.getElementById('secondPrize').value = parseFloat(secondPrize.toFixed(2));
+    // document.getElementById('thirdPrize').value = parseFloat(thirdPrize.toFixed(2));
    
   
     
     
-    const subtotal = firstPrize + secondPrize + thirdPrize;
+    const subtotal = firstPrize;
 
     let subTotalResult = parseFloat(subtotal.toFixed(2));
 
@@ -28,9 +28,9 @@ document.getElementById("submit").addEventListener("click", function () {
     
   
 
-    document.getElementById('secoundPrizeChange').innerText = secondPrize;
-    document.getElementById("firstPrizeChange").innerText = firstPrize;
-    document.getElementById("thirdPrizeChange").innerText = thirdPrize;
+    // document.getElementById('secoundPrizeChange').innerText = secondPrize;
+    // document.getElementById("firstPrizeChange").innerText = firstPrize;
+    // document.getElementById("thirdPrizeChange").innerText = thirdPrize;
    
     
     
@@ -137,6 +137,18 @@ document.getElementById('shop').addEventListener('click', function() {
    }
    else if(shop_name === "subway"){
     document.getElementById('bg_image').src = 'image/subway.png';
+   }
+   else if(shop_name === "bath"){
+    document.getElementById('bg_image').src = 'image/bath.png';
+   }
+   else if(shop_name === "kfc"){
+    document.getElementById('bg_image').src = 'image/kfc.png';
+   }
+   else if(shop_name === "dominos"){
+    document.getElementById('bg_image').src = 'image/dominos.png';
+   }
+   else if(shop_name === "gap"){
+    document.getElementById('bg_image').src = 'image/gap.png';
    }
 })
 
